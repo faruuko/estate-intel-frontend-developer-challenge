@@ -1,34 +1,8 @@
 # estate-intel-frontend-developer-challenge
 
-## Project setup
-```
-yarn install
-```
+Solution to Estate Intel VueJs Challenge - Render API data to table
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Clone the repository
+- Run `yarn install`
+- Run `yarn serve`
+- For test, run `yarn test`
