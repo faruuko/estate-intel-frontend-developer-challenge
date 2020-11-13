@@ -1,8 +1,8 @@
-import StatusPill from '@/components/StatusPill/index.vue';
+import ProjectBadge from '../../components/ProjectBadge/index.vue';
 
 export default {
   name: 'Home',
   components: {
-    StatusPill,
+    ProjectBadge,
   },
 };

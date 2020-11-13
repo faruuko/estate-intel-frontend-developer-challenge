@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <ProjectBadge />
-  </div>
+  <span class="badge-main" v-bind:class="badgeStatus">
+    {{ status }}
+  </span>
 </template>
 
 <style lang="sass">
