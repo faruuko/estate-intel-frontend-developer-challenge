@@ -1,4 +1,4 @@
-import StatusPill from '@/components/StatusPill.vue';
+import StatusPill from '@/components/StatusPill/index.vue';
 
 export default {
   name: 'Home',
