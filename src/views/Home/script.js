@@ -4,7 +4,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      projects: {},
+      ongoing_projects: {},
     };
   },
   components: {
@@ -15,7 +15,7 @@ export default {
   },
   watch: {
     '$store.getters.GET_PROJECTS': function () {
-      this.projects = this.$store.getters.GET_PROJECTS.filter((project) => project.status === 'Under construction');
+      this.ongoing_projects = this.$store.getters.GET_PROJECTS.filter((project) => project.status === 'Under construction');
     },
   },
 };

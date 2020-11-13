@@ -50,6 +50,7 @@ table {
 
 .table-head-wrapper {
   float: left;
+  box-shadow: 0 4px 12px 0px #e0e8ef;
 }
 
 .table-data-wrapper {
@@ -72,8 +73,8 @@ table {
     }
 
     @media (max-width: 1023px) {
-      min-width: calc((100vw - 2 * 40px - 200px) / 3);
-      max-width: calc((100vw - 2 * 40px - 200px) / 3);
+      min-width: calc((750px - 2 * 40px - 200px) / 3);
+      max-width: calc((750px - 2 * 40px - 200px) / 3);
     }
   }
 
