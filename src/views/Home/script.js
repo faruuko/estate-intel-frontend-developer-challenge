@@ -5,6 +5,11 @@ export default {
   components: {
     ProjectBadge,
   },
+  computed: {
+    getProjects() {
+      return this.$store.getters.GET_PROJECTS;
+    },
+  },
   mounted() {
     this.$store.dispatch('FETCH_PROJECTS');
   },

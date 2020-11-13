@@ -18,5 +18,7 @@ export default new Vuex.Store({
       Api.get('').then((response) => state.commit('SET_PROJECTS', response.data));
     },
   },
-  modules: {},
+  getters: {
+    GET_PROJECTS: (state) => state.projects.data,
+  },
 });
