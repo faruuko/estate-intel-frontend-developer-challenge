@@ -9,7 +9,12 @@
 
 body
   color: #44546a
-  padding: 40px
+  padding: 20px
+
+@media (min-width: 1023px)
+  body
+    color: #44546a
+    padding: 140px
 
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif

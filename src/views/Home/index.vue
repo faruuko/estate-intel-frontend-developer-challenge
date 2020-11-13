@@ -71,7 +71,7 @@
   </div>
 </template>
 
-<style lang="scss">
-@import "style.scss";
+<style lang="sass">
+@import "style.sass";
 </style>
 <script src="./script.js"></script>
