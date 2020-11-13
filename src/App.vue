@@ -7,6 +7,10 @@
 <style lang="sass">
 @import 'reset-css';
 
+body
+  color: #44546a
+  padding: 40px
+
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased

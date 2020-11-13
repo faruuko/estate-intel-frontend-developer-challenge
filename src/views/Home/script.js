@@ -2,15 +2,20 @@ import ProjectBadge from '../../components/ProjectBadge/index.vue';
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      projects: {},
+    };
+  },
   components: {
     ProjectBadge,
   },
-  computed: {
-    getProjects() {
-      return this.$store.getters.GET_PROJECTS;
-    },
-  },
   mounted() {
     this.$store.dispatch('FETCH_PROJECTS');
+  },
+  watch: {
+    '$store.getters.GET_PROJECTS': function () {
+      this.projects = this.$store.getters.GET_PROJECTS.filter((project) => project.status === 'Under construction');
+    },
   },
 };

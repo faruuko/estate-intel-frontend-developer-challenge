@@ -1,55 +1,52 @@
 <template>
   <div class="home">
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-
     <div class="wrapper">
-      <table class="table-scores">
-        <thead>
-          <tr>
-            <th>
-              <div class="label">Project name</div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(project, index) in getProjects" :key="index">
-            <td>
-              <div class="label">{{ project.project_name }}</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-head-wrapper">
+        <table class="project-name">
+          <thead>
+            <tr>
+              <th>
+                <div class="label bold">Project name</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(project, index) in projects" :key="index">
+              <td>
+                <div class="label bold">{{ project.project_name }}</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="table-data-wrapper">
         <table class="table-data">
           <thead>
             <tr>
               <th>
-                <div class="label">Developer</div>
+                <div class="label bold">Developer</div>
               </th>
               <th>
-                <div class="label">Main Contractor</div>
+                <div class="label bold">Main Contractor</div>
               </th>
               <th>
-                <div class="label">Area</div>
+                <div class="label bold">Area</div>
               </th>
               <th>
-                <div class="label">State</div>
+                <div class="label bold">State</div>
               </th>
               <th>
-                <div class="label">Status</div>
+                <div class="label bold">Status</div>
               </th>
               <th>
-                <div class="label">Sector</div>
+                <div class="label bold">Sector</div>
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(project, index) in getProjects" :key="index">
+            <tr v-for="(project, index) in projects" :key="index">
               <td>
-                <div class="label">{{ project.project_name }}</div>
+                <div class="label">{{ project.developer }}</div>
               </td>
               <td>
                 <div class="label">{{ project.main_contractor }}</div>
@@ -61,7 +58,7 @@
                 <div class="label">{{ project.state }}</div>
               </td>
               <td>
-                <ProjectBadge :status="project.status"/>
+                <ProjectBadge :status="project.status" />
               </td>
               <td>
                 <div class="label">{{ project.sector }}</div>
