@@ -5,4 +5,7 @@ export default {
   components: {
     ProjectBadge,
   },
+  mounted() {
+    this.$store.dispatch('FETCH_PROJECTS');
+  },
 };
