@@ -11,7 +11,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(project, index) in ongoing_projects" :key="index">
+            <tr v-for="(project, index) in getProjects" :key="index">
               <td>
                 <div class="label bold">{{ project.project_name }}</div>
               </td>
@@ -44,7 +44,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(project, index) in ongoing_projects" :key="index">
+            <tr v-for="(project, index) in getProjects" :key="index">
               <td>
                 <div class="label">{{ project.developer }}</div>
               </td>
